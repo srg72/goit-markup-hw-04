@@ -164,6 +164,8 @@ p {
   background-color: var(--hero-bg);
   max-width: 1600px;
   height: 600px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .container-hero {
