@@ -13,7 +13,8 @@
   --lidht-bg-ol: #d9d9d9;
   --main-bg-ol: #2f303a;
   --footer-contacts: rgba(255, 255, 255, 0.6);
-
+  --hero-bg: rgba(196, 196, 196, 1);
+  --linear-grd: (47, 48, 58, 0.4);
   /* card-image  */
   --card-image-gap: 30px;
 }
@@ -151,8 +152,18 @@ p {
 /*  hero section */
 
 .hero {
-  background-image: url(../images/pictures/hero.jpg);
-  background: var(--main-bg-ol);
+  background-image: linear-gradient(
+      to top,
+      rgba(47, 48, 58, 0.4),
+      rgba(47, 48, 58, 0.4)
+    ),
+    url(../images/pictures/hero.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-color: var(--hero-bg);
+  max-width: 1600px;
+  height: 600px;
 }
 
 .container-hero {
