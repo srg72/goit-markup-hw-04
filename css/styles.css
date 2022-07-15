@@ -151,13 +151,15 @@ p {
 /*  hero section */
 
 .hero {
+  background-image: url(../images/pictures/hero.jpg);
   background: var(--main-bg-ol);
-  padding-top: 200px;
-  padding-bottom: 200px;
 }
 
 .container-hero {
   display: flex;
+  padding-top: 200px;
+  padding-bottom: 200px;
+
   width: 696px;
 
   margin-left: auto;
