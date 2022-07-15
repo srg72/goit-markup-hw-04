@@ -15,6 +15,7 @@
   --footer-contacts: rgba(255, 255, 255, 0.6);
   --hero-bg: rgba(196, 196, 196, 1);
   --linear-grd: (47, 48, 58, 0.4);
+  --sosial-icon: #afb1b8;
   /* card-image  */
   --card-image-gap: 30px;
 }
@@ -378,10 +379,10 @@ p {
 }
 .team-info {
   padding-top: 30px;
-  padding-bottom: 30px;
 }
 
 .persson-info {
+  margin-bottom: 16px;
   font-style: normal;
   font-weight: 400;
   font-size: 16px;
@@ -391,6 +392,35 @@ p {
   color: var(--secondary-text);
 
   cursor: pointer;
+}
+
+/* sosial icon */
+.sosial-links {
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+}
+.sosial-link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 44px;
+  height: 44px;
+  background-color: var(--light-text);
+  border-radius: 50%;
+}
+.sosial-link:hover,
+.sosial-link:focus {
+  background-color: var(--accent);
+}
+.sosial-icon {
+  fill: var(--sosial-icon);
+}
+.sosial-link:hover .sosial-icon {
+  fill: var(--light-text);
+}
+.sosial-link:focus {
+  fill: var(--accent);
 }
 
 /* pictures portfolio */
@@ -500,6 +530,26 @@ p {
 .footer-phone:hover,
 .footer-mail:focus,
 .footer-phone:focus {
+  color: var(--light-text);
+}
+.sosial-footer {
+  display: flex;
+  margin-left: auto;
+  margin-right: auto;
+  align-items: center;
+  flex-direction: column;
+}
+
+.sosial-text {
+  width: 145px;
+  height: 16px;
+
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 16px;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+
   color: var(--light-text);
 }
 
