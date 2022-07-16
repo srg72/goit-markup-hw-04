@@ -39,8 +39,8 @@ body {
   margin-left: auto;
   margin-right: auto;
 
-  /* outline: 2px solid red; */
-  /* outline-offset: -2px; */
+  outline: 2px solid red;
+  outline-offset: -2px;
 }
 
 /* reset styles */
@@ -424,11 +424,12 @@ p {
 }
 
 /* pictures portfolio */
-.caption {
+.name-project {
   font-style: normal;
   font-weight: 700;
   font-size: 18px;
   line-height: 2;
+  margin-bottom: 5px;
 
   letter-spacing: 0.06em;
 
@@ -455,21 +456,22 @@ p {
 /* Footer */
 
 .footer {
-  display: flex;
   background: var(--main-bg-ol);
+  max-width: 1600px;
+  min-height: 252px;
   padding-top: 60px;
   padding-bottom: 60px;
-
-  margin-left: auto;
-  margin-right: auto;
-
-  flex-direction: column;
 }
+
 .footer-list {
   margin-bottom: 20px;
 }
-.container-adress {
-  max-width: 230px;
+.footer-adress {
+  max-width: 231px;
+  min-height: 80px;
+  margin-left: 0;
+  margin-right: 0;
+  padding-right: 0;
 }
 
 .footer-logo {
@@ -491,6 +493,7 @@ p {
 .text-adress {
   display: inline-block;
   margin-bottom: 10px;
+
   font-style: normal;
   font-weight: 400;
   font-size: 14px;
@@ -532,21 +535,55 @@ p {
 .footer-phone:focus {
   color: var(--light-text);
 }
-.sosial-footer {
+/* sosial footer */
+.sosial {
   display: flex;
-  margin-left: auto;
+}
+
+.sosial-footer {
+  max-width: 206px;
+  max-height: 80px;
+  margin-left: 70px;
   margin-right: auto;
+}
+
+.footer-links {
+  display: flex;
   align-items: center;
-  flex-direction: column;
+  gap: 10px;
+}
+.footer-link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 44px;
+  height: 44px;
+  background-color: rgba(255, 255, 255, 0.1);
+  border-radius: 50%;
+}
+.footer-icon {
+  fill: var(--light-text);
+}
+.footer-link:hover,
+.footer-link:focus {
+  background-color: var(--accent);
+}
+
+.footer-link:hover {
+  fill: var(--light-text);
+}
+.footer-link:focus {
+  fill: var(--accent);
 }
 
 .sosial-text {
   width: 145px;
   height: 16px;
+  margin-bottom: 20px;
 
   font-weight: 700;
   font-size: 14px;
-  line-height: 16px;
+  line-height: 1.14;
   letter-spacing: 0.03em;
   text-transform: uppercase;
 
@@ -595,7 +632,4 @@ p {
   padding-bottom: 20px;
   padding-left: 24px;
   padding-right: 24px;
-}
-.caption {
-  margin-bottom: 5px;
 }
