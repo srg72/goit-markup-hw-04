@@ -336,10 +336,10 @@ p {
   display: inline-block;
 }
 .icon {
-  color: #2196f3;
+  --color1: var(--main-text);
 }
 .icon:hover {
-  color: red;
+  --color: var(--accent);
 }
 
 .pictures-list {
