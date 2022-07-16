@@ -335,6 +335,13 @@ p {
 .group-icon {
   display: inline-block;
 }
+.icon {
+  color: #2196f3;
+}
+.icon:hover {
+  color: red;
+}
+
 .pictures-list {
   display: flex;
 
