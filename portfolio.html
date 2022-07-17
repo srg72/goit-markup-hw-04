@@ -28,6 +28,7 @@
 
     <link rel="stylesheet" href="./css/styles.css" />
   </head>
+
   <body>
     <!-- Header section -->
 
@@ -36,18 +37,16 @@
         <a class="logo link" href="./index.html" lang="en"
           >Web<span class="stud">Studio</span>
         </a>
-
-        <!-- navigation-->
-
+        <!-- navigation -->
         <nav class="nav-list">
           <ul class="nav list header-container">
             <li class="nav-item">
-              <a class="link nav-link" href="./index.html">Студия</a>
+              <a class="link nav-link active-link" href="./index.html"
+                >Студия</a
+              >
             </li>
             <li class="nav-item">
-              <a class="link nav-link active-link" href="./portfolio.html"
-                >Портфолио</a
-              >
+              <a class="link nav-link" href="./portfolio.html">Портфолио</a>
             </li>
             <li class="nav-item">
               <a class="link nav-link" href="./index.html">Контакты</a>
@@ -55,14 +54,17 @@
           </ul>
         </nav>
         <a class="header-mail nav-link link" href="mailto:info@devstudio.com"
+          ><svg width="16" height="12" class="mail-icon">
+            <use href="./images/icons.svg#envelope"></use></svg
           >info@devstudio.com</a
         >
         <a class="header-phone nav-link link" href="tel:380961111111"
+          ><svg width="10" height="16" class="coll-icon">
+            <use href="./images/icons.svg#vector"></use></svg
           >38 096 111 11 11</a
         >
       </div>
     </header>
-
     <!--Content portfolio-->
     <main class="main-content">
       <section class="filters">
@@ -84,7 +86,6 @@
               <button class="button click5" type="button">Маркетинг</button>
             </li>
           </ul>
-
           <ul class="list-image list">
             <li class="item-link">
               <img
@@ -214,7 +215,7 @@
           >Web<span class="footer-stud">Studio</span></a
         >
       </div>
-      <div class="sosial">
+      <div class="sosial container">
         <div class="container footer-adress">
           <address class="container-adress">
             <p class="text-adress">г. Киев, пр-т Леси Украинки, 26</p>
