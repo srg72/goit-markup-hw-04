@@ -115,14 +115,9 @@ p {
 .coll-icon,
 .mail-icon {
   margin-right: 10px;
-  fill: var(--secondary-text);
+  fill: currentColor;
 }
-.coll-icon:hover,
-.mail-icon:hover,
-.coll-icon:focus,
-.mail-icon:focus {
-  fill: var(--accent);
-}
+
 /* navigation */
 .nav a {
   color: var(--main-text);
@@ -361,7 +356,6 @@ p {
 
 .pictures-list {
   display: flex;
-
   cursor: pointer;
 }
 .pictures-img:last-child {
@@ -388,6 +382,7 @@ p {
 /* Team section */
 .team {
   padding-top: 94px;
+  padding-bottom: 94px;
   /* padding-bottom: 94px; */
 }
 .team-list {
@@ -456,7 +451,7 @@ p {
   gap: 10px;
   justify-content: center;
 }
-.sosial-link {
+.sosial-item {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -466,14 +461,18 @@ p {
   border-radius: 50%;
   margin-bottom: 30px;
 }
-.sosial-link:hover,
-.sosial-link:focus {
+.sosial-item:hover,
+.sosial-item:focus {
   background-color: var(--accent);
 }
 .sosial-icon {
   fill: var(--sosial-icon);
 }
+
 .sosial-link:hover .sosial-icon {
+  fill: var(--light-text);
+}
+.sosial-item:focus .sosial-icon {
   fill: var(--light-text);
 }
 /* partners */
@@ -483,7 +482,6 @@ p {
 }
 .partners-text {
   display: flex;
-
   justify-content: center;
 
   margin-bottom: 50px;
@@ -513,6 +511,11 @@ p {
 }
 .partners-item:last-child {
   margin-right: 0;
+}
+.logo-comp {
+  width: 106px;
+  height: 60px;
+  border: 1px solid var(--sosial-icon);
 }
 .partners-item:hover,
 .partners-item:focus {
