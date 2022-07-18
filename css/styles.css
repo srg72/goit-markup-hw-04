@@ -732,6 +732,7 @@ p {
 }
 .item-image {
   display: flex;
+  background: var(--light-text);
   border-top: none;
   border-left: none;
   border-right: none;
