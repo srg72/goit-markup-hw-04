@@ -333,10 +333,6 @@ p {
 .group-icon {
   fill: var(--main-text);
 }
-.group-icon:hover,
-.group-icon:focus {
-  fill: var(--accent);
-}
 
 .pictures-list {
   display: flex;
@@ -367,6 +363,7 @@ p {
 .team {
   padding-top: 94px;
   padding-bottom: 94px;
+  background-color: var(--secondary-bg);
 }
 .team-list {
   display: flex;
@@ -376,7 +373,7 @@ p {
   width: 270px;
   height: 430px;
   margin-right: 30px;
-  background-color: var(--secondary-bg);
+  background-color: var(--light-text);
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
@@ -399,6 +396,7 @@ p {
 }
 
 .photo {
+  margin-bottom: 30px;
   border-bottom: none;
   cursor: pointer;
 }
@@ -415,7 +413,8 @@ p {
 }
 .team-info {
   padding-top: 30px;
-  border-top: none;
+  padding-bottom: 30px;
+  border-top: 0;
 }
 
 .persson-info {
@@ -436,7 +435,11 @@ p {
   display: flex;
   gap: 10px;
   justify-content: center;
+  padding-bottom: 30px;
 }
+/* .sosial-link {
+  padding-bottom: 30px;
+} */
 
 .sosial-item {
   display: flex;
@@ -509,10 +512,6 @@ p {
   fill: var(--sosial-icon);
 }
 
-/* .partners-item:hover,
-.partners-item:focus {
-  fill: var(--accent);
-} */
 .logo-comp:hover,
 .logo-comp:focus {
   border: 1px solid var(--accent);
@@ -571,10 +570,14 @@ p {
 }
 
 .cart-border {
-  background: var(--light-text);
-  border: 1px var(--caed-pof);
-
+  background-color: var(--light-text);
+  border: 1px solid var(--bground);
   border-top: none;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  padding-left: 24px;
+  padding-right: 24px;
+
   padding-top: 20px;
   padding-bottom: 20px;
   padding-left: 24px;
