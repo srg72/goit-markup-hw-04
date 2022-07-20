@@ -512,7 +512,7 @@ p {
 .partners-item:hover,
 .partners-item:focus {
   fill: var(--accent);
-  border: 1px solid var(--accent);
+  border: solid var(--accent);
   border-radius: 4px;
 }
 
@@ -521,10 +521,6 @@ p {
 }
 .logo-comp:focus .partners-icon {
   fill: var(--accent);
-}
-.logo-comp:hover,
-.logo-comp:focus {
-  border: none;
 }
 
 /* pictures portfolio */
