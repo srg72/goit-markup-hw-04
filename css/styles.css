@@ -16,6 +16,7 @@
   --hero-bg: rgba(196, 196, 196, 1);
   --linear-grd: (47, 48, 58, 0.4);
   --sosial-icon: #afb1b8;
+  --caed-pof: #eeeeee;
   /* card-image  */
   --card-image-gap: 30px;
 }
@@ -233,7 +234,7 @@ p {
 }
 
 /* button portfolio */
-.item-image,
+
 .button {
   display: flex;
 
@@ -319,10 +320,10 @@ p {
   margin-right: 30px;
 }
 .group-link {
+  width: 270px;
+  height: 120px;
   background-color: var(--secondary-bg);
-
   margin-bottom: 30px;
-  border: 2px solid var(--secondary-bg);
 }
 .group-links:last-child {
   margin-right: 0;
@@ -375,6 +376,7 @@ p {
   width: 270px;
   height: 430px;
   margin-right: 30px;
+  background-color: var(--secondary-bg);
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
@@ -497,12 +499,16 @@ p {
   display: flex;
   align-items: center;
   justify-content: center;
-
   width: 170px;
   height: 92px;
   border: 1px solid var(--sosial-icon);
   border-radius: 4px;
 }
+
+.partners-icon {
+  fill: var(--sosial-icon);
+}
+
 .partners-item:hover,
 .partners-item:focus {
   fill: var(--accent);
@@ -515,9 +521,8 @@ p {
 .logo-comp:focus .partners-icon {
   fill: var(--accent);
 }
-
-.partners-icon {
-  fill: var(--sosial-icon);
+.logo-icon {
+  border: none;
 }
 
 /* pictures portfolio */
@@ -562,15 +567,11 @@ p {
   margin-left: var(--card-image-gap);
   margin-top: var(--card-image-gap);
 }
-.item-image {
-  border-top: none;
-  border-left: none;
-  border-right: none;
-  border-bottom: 1px solid var(--light-text);
-}
+
 .cart-border {
-  border: 1px solid var(--light-text);
-  background-color: #ffffff;
+  background: var(--light-text);
+  border: 1px var(--caed-pof);
+
   border-top: none;
   padding-top: 20px;
   padding-bottom: 20px;
@@ -615,9 +616,13 @@ p {
   padding-top: 60px;
   padding-bottom: 60px;
 }
+.container-footer {
+  display: flex;
+  align-items: baseline;
+}
 
 .footer-list {
-  margin-bottom: 20px;
+  margin-right: 70px;
 }
 .footer-adress {
   display: flex;
@@ -642,9 +647,6 @@ p {
   color: var(--light-text);
 }
 /* Footer adress */
-.sosial {
-  padding-left: 0;
-}
 
 .text-adress {
   display: inline-block;
@@ -694,15 +696,12 @@ p {
 /* sosial footer */
 .sosial {
   display: flex;
+  flex-direction: column;
 }
 
 .sosial-footer {
   max-width: 210px;
   max-height: 80px;
-  margin-left: 70px;
-
-  padding-left: 0;
-  padding-right: 0;
 }
 
 .footer-links {
