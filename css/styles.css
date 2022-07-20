@@ -509,14 +509,18 @@ p {
   fill: var(--sosial-icon);
 }
 
-.partners-item:hover,
+/* .partners-item:hover,
 .partners-item:focus {
   fill: var(--accent);
-  border: solid var(--accent);
+} */
+.logo-comp:hover,
+.logo-comp:focus {
+  border: 1px solid var(--accent);
   border-radius: 4px;
+  fill: var(--accent);
 }
 
-.partners-item:hover .partners-icon {
+.logo-comp:hover .partners-icon {
   fill: var(--accent);
 }
 .logo-comp:focus .partners-icon {
