@@ -513,6 +513,7 @@ p {
 .partners-item:focus {
   fill: var(--accent);
   border: 1px solid var(--accent);
+  border-radius: 4px;
 }
 
 .partners-item:hover .partners-icon {
@@ -521,7 +522,8 @@ p {
 .logo-comp:focus .partners-icon {
   fill: var(--accent);
 }
-.logo-icon {
+.logo-comp:hover,
+.logo-comp:focus {
   border: none;
 }
 
